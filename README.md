@@ -7,33 +7,33 @@
 ## Project Tree
 ```
 app/
-        index.php
-    data/
-        mysql/
-        redis/
-    dockerfiles/
-        mysql/
-            my.cnf
-            Dockerfile
-        nginx/
-            conf.d/
-                localhost.conf
-            Dockerfile
-            nginx.conf
-        php/
-            Dockerfile
-            php.ini
-            php-dev.ini
-            php-fpm.conf
-        redis/
-            Dockerfile    
-        docker-compose.yml
-    logs/
-        mysql/
-        nginx/
-        php-fpm/
-    .gitgnore
-    README.md
+    index.php
+data/
+    mysql/
+    redis/
+dockerfiles/
+    mysql/
+        my.cnf
+        Dockerfile
+    nginx/
+        conf.d/
+            localhost.conf
+        Dockerfile
+        nginx.conf
+    php/
+        Dockerfile
+        php.ini
+        php-dev.ini
+        php-fpm.conf
+    redis/
+        Dockerfile    
+    docker-compose.yml
+logs/
+    mysql/
+    nginx/
+    php-fpm/
+.gitgnore
+README.md
 ```
 ## 使用
 1. 安装 Docker，Docker-compose
@@ -48,6 +48,7 @@ docker-compose up
 #如果没问题，下次可以守护模式启动 docker-composer up -d
 ```
 使用`docker-compose down`关闭容器并删除服务，更多命令参见[文档](https://yeasy.gitbook.io/docker_practice/compose/commands)。
+
 3. 使用Composer
 我们在创建 PHP-fpm 容器时就已经将 Composer 安装在容器中，可使用docker-compose进行操作：
 ```
